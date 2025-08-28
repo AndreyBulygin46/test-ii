@@ -1,19 +1,19 @@
 # Агент оценки звонков
 
 ## Выбранная модель
-**Модель**: [cardiffnlp/twitter-robertа-base-sentiment](https://huggingface.co/cardiffnlp/twitter-roberta-base-sentiment)
-**Тип задачи**: Анализ тональности текста
+**Модель**: [cardiffnlp/twitter-robertа-base-sentiment](https://huggingface.co/cardiffnlp/twitter-roberta-base-sentiment)  
+**Тип задачи**: Анализ тональности текста  
 **Особенности**:
 - Поддерживает английский язык
 - Возвращает метки `LABEL_0` (негативный), `LABEL_1` (нейтральный), `LABEL_2` (позитивный)
 - Работает через Hugging Face Transformers
 
-Что используется:
-streamlit    - Для отображения простого веб-интерфейса.
-transformers - Для классификации текста по тональности.
-re           - Для педобработки текста.
-googletrans  - Для перевода текста, если он на русском языке.
-Файл .env.example не используется, так как приложение не требует API ключей. 
+Что используется:  
+streamlit    - Для отображения простого веб-интерфейса.  
+transformers - Для классификации текста по тональности.  
+re           - Для педобработки текста.  
+googletrans  - Для перевода текста, если он на русском языке.  
+Файл .env.example не используется, так как приложение не требует API ключей.  
 
 ---
 
@@ -25,7 +25,7 @@ pip install -r requirements.txt
 
 ### 2. Запуск приложения
 --bash
-streamlit run main.py
+streamlit run main.py  
 Порт по умолчанию: http://localhost:8501
 
 ### 3. Чтобы улучшил.
